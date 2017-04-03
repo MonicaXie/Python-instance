@@ -1,13 +1,15 @@
 # 任务：1、2、3、4、5，这五个数能组成多少个互不相同且无重复数字的三位数？各是多少？
 
 # 方法一
-
+nums = []
 for x in range(1, 6):
     for y in range(1, 6):
         for z in range(1, 6):
             if (x != y) and (y != z) and (x != z):
                 num = x * 100 + y * 10 + z
-                print(num)
+                nums.append(num)
+print(len(nums))
+print(nums)
 
 # 方法二
 
