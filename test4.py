@@ -26,8 +26,7 @@ def day_num():
     month = int(input('Month: '))
     day = int(input('Day: '))
     if not 1 <= month <= 12:
-        print('data error')
-        return
+        return 'data error'
     sum = day
     months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     leap = 0
@@ -37,5 +36,5 @@ def day_num():
         months[1] = 29
     for i in range(month - 1):
         sum += months[i]
-    print('it is the %dth day.' % sum)
-day_num()
+    return 'it is the %dth day.' % sum
+print(day_num())
