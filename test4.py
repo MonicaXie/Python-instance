@@ -24,6 +24,8 @@ print('it is the %dth day.' % sum)
 year = int(input('Year: '))
 month = int(input('Month: '))
 day = int(input('Day: '))
+if not 1 <= month <= 12:
+    print('data error')
 sum = day
 months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 leap = 0
