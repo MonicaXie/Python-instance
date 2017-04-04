@@ -11,13 +11,13 @@ def fib(n):
     return fibs
 print(fib(10))
 
-# 输出结果:
+# 输出结果
 
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 # 任务：输出第10个斐波那契数列。
 
-# 方法一：
+# 方法一
 
 def fib(n):
     if n == 1 or n == 2:
@@ -25,7 +25,7 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 print(fib(10))
 
-# 方法二：
+# 方法二
 
 def fib(n):
     a, b = 1, 1
@@ -34,6 +34,6 @@ def fib(n):
     return a
 print(fib(10))
 
-# 输出结果：
+# 输出结果
 
 55
