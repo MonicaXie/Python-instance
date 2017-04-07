@@ -7,7 +7,7 @@ for i in range(10000):
     if (x * x == i + 100) and (y * y == i + 268):
         print(i)
 
-# 输出结果：
+# 输出结果
 21
 261
 1581
