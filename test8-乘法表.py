@@ -4,7 +4,7 @@
 
 for i in range(1, 10):
     for j in range(1, i + 1):
-        print('%d * %d = %d' % (i, j, i * j), end = '    ') # 字符串空格为4个，每个算式间隔4个字节
+        print('%d * %d = %2d' % (i, j, i * j), end = '    ') #end关键字表示结尾以“=”右边内容输出，每个算式设置间隔宽度为4
     print() # print()表示换行
         
 # 输出结果
@@ -23,9 +23,9 @@ for i in range(1, 10):
 
 for i in range(1, 10):
     for k in range(1, i):
-        print(end = '              ') # 字符串空格为14个，每个算式的位置是14个字节
+        print(end = '              ') # 每个算式宽度为14
     for j in range(i, 10):
-        print('%d * %d = %2d' % (i, j, i * j), end = '    ')
+        print('%d * %d = %2d' % (i, j, i * j), end = '    ') # %d中间加入2，表示指定占位符宽度为2
     print()
     
 # 输出结果
