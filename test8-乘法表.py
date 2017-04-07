@@ -23,7 +23,7 @@ for i in range(1, 10):
 
 for i in range(1, 10):
     for k in range(1, i):
-        print(end = '            ') # 字符串空格为12个，每个算式的位置是12个字节
+        print(end = '            ') # 字符串空格为14个，每个算式的位置是14个字节
     for j in range(i, 10):
         print('%d * %d = %2d' % (i, j, i * j), end = '  ')
     print()
