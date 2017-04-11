@@ -7,10 +7,10 @@
 
 # 方法一：
 
-def reduceNum(n):
-    print('{} = '.format(n), )
+def priemfactors(n):
+    print('{} = '.format(n))
     if not isinstance(n, int) or n <= 0:
-        print('请输入一个正确的数字 !')
+        print('请输入一个正确的数字！')
         exit(0)
     elif n in [1]:
         print('{}'.format(n))
@@ -21,9 +21,9 @@ def reduceNum(n):
                 if n == 1: 
                     print(index)
                 else : # index 一定是素数
-                    print('{} *'.format(index), )
+                    print('{} *'.format(index))
                 break
-reduceNum(90)
+priemfactors(90)
 
 # 方法二：
 
