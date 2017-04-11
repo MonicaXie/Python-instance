@@ -5,6 +5,8 @@
 # 2) 如果n<>k，但n能被k整除，则应打印出k的值，并用n除以k的商,作为新的正整数你n,重复执行第一步。
 # 3) 如果n不能被k整除，则用k+1作为k的值,重复执行第一步。
 
+# 方法一：
+
 def reduceNum(n):
     print('{} = '.format(n), )
     if not isinstance(n, int) or n <= 0:
@@ -22,9 +24,8 @@ def reduceNum(n):
                     print('{} *'.format(index), )
                 break
 reduceNum(90)
-reduceNum(100)
 
-方法二：
+# 方法二：
 
 def primefactors(n):
     f = 2
